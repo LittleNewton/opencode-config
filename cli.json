@@ -6,5 +6,8 @@
   },
   "theme": {
     "name": "matrix"
+  },
+  "session": {
+    "sidebar": "hide"
   }
 }
