@@ -1,27 +1,27 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "provider": {
-    "custom-glm": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "GLM Third Party",
-      "options": {
-        "baseURL": "https://llm.longai.vip/v1",
-        "apiKey": "sk-EI5hgtslsHkgy6NQ46fZWgma79rTSU3TqBdW922wnfA8IcRx"
-      },
-      "models": {
-        "glm-5.3": {
-          "name": "GLM-5.3",
-          "limit": {
-            "context": 1000000,
-            "output": 128000
-          }
-        },
-        "glm-5.3-flash": {
-          "name": "GLM-5.3 Flash"
-        }
-      }
-    }
-  },
-  "model": "custom-glm/glm-5.3",
-  "small_model": "custom-glm/glm-5.3-flash"
+	"$schema": "https://opencode.ai/config.json",
+	"provider": {
+		"custom-glm": {
+			"npm": "@ai-sdk/openai-compatible",
+			"name": "GLM 官方",
+			"options": {
+				"baseURL": "https://open.bigmodel.cn/api/coding/paas/v4",
+				"apiKey": "2b87cda5fee843678b0b7b682e55229b.3TUAnOByJ6h9tj60"
+			},
+			"models": {
+				"glm-5.3": {
+					"name": "GLM-5.3",
+					"limit": {
+						"context": 1000000,
+						"output": 128000
+					}
+				},
+				"glm-5.3-flash": {
+					"name": "GLM-5.3 Flash"
+				}
+			}
+		}
+	},
+	"model": "custom-glm/glm-5.3",
+	"small_model": "custom-glm/glm-5.3-flash"
 }
