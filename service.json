@@ -1,3 +1,11 @@
 {
-  "password": "7QfQmbEVPoNg8uAGQzZf1AWbc9KMLyNCDNuU312fOqM"
+  "password": "7QfQmbEVPoNg8uAGQzZf1AWbc9KMLyNCDNuU312fOqM",
+  "env": {
+    "HTTP_PROXY": "http://192.168.88.103:1081",
+    "HTTPS_PROXY": "http://192.168.88.103:1081",
+    "NO_PROXY": "localhost,127.0.0.1,::1",
+    "http_proxy": "http://192.168.88.103:1081",
+    "https_proxy": "http://192.168.88.103:1081",
+    "no_proxy": "localhost,127.0.0.1,::1"
+  }
 }
