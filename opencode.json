@@ -1,27 +1,57 @@
 {
-	"$schema": "https://opencode.ai/config.json",
-	"provider": {
-		"custom-glm": {
-			"npm": "@ai-sdk/openai-compatible",
-			"name": "GLM 官方",
-			"options": {
-				"baseURL": "https://open.bigmodel.cn/api/coding/paas/v4",
-				"apiKey": "2b87cda5fee843678b0b7b682e55229b.3TUAnOByJ6h9tj60"
-			},
-			"models": {
-				"glm-5.3": {
-					"name": "GLM-5.3",
-					"limit": {
-						"context": 1000000,
-						"output": 128000
-					}
-				},
-				"glm-5.3-flash": {
-					"name": "GLM-5.3 Flash"
-				}
-			}
-		}
-	},
-	"model": "custom-glm/glm-5.3",
-	"small_model": "custom-glm/glm-5.3-flash"
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "browser-mcp": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@agent360/browser-mcp@latest"
+        ]
+      },
+      "cloudflare": {
+        "type": "remote",
+        "url": "https://mcp.cloudflare.com/mcp",
+        "protocol": "auto",
+        "pool": true
+      },
+      "github": {
+        "type": "remote",
+        "url": "https://api.githubcopilot.com/mcp/readonly",
+        "protocol": "auto",
+        "pool": true
+      },
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp",
+        "protocol": "auto",
+        "pool": true
+      }
+    }
+  },
+  "provider": {
+    "custom-glm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "GLM 官方",
+      "options": {
+        "baseURL": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "apiKey": "2b87cda5fee843678b0b7b682e55229b.3TUAnOByJ6h9tj60"
+      },
+      "models": {
+        "glm-5.3": {
+          "name": "GLM-5.3",
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          }
+        },
+        "glm-5.3-flash": {
+          "name": "GLM-5.3 Flash"
+        }
+      }
+    }
+  },
+  "model": "openai/gpt-6.2-astra",
+  "small_model": "openai/gpt-6.2-astra"
 }
