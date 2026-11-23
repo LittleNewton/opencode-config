@@ -5,7 +5,7 @@
     "session.first": "home,alt+home"
   },
   "theme": {
-    "name": "matrix"
+    "name": "dracula"
   },
   "session": {
     "sidebar": "hide"
