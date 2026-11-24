@@ -57,6 +57,7 @@
       }
     }
   },
+  "plugins": ["-opencode.provider.openai-context-caps"],
   "model": "openai/gpt-6-astra-fast",
   "small_model": "openai/gpt-6-astra-fast"
 }
