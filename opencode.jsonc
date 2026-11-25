@@ -41,7 +41,7 @@
       "name": "GLM 官方",
       "settings": {
         "baseURL": "https://open.bigmodel.cn/api/coding/paas/v4",
-        "apiKey": "2b87cda5fee843678b0b7b682e55229b.3TUAnOByJ6h9tj60"
+        "apiKey": "{file:~/.secrets/glm.key}"
       },
       "models": {
         "glm-5.3": {
@@ -57,7 +57,10 @@
       }
     }
   },
-  "plugins": ["-opencode.provider.openai-context-caps"],
+  "formatter": true,
+  "plugins": [
+    "-opencode.provider.openai-context-caps"
+  ],
   "model": "openai/gpt-6-astra-fast",
   "agents": {
     "title": {
