@@ -37,9 +37,9 @@
         "type": "local",
         "command": [
           "node",
-          "{env:HOME}/.config/opencode/scripts/google-workspace.mjs"
+          "{env:HOME}/.local/share/opencode/google-workspace-official/server/dist/index.js"
         ],
-        "cwd": "{env:HOME}",
+        "cwd": "{env:HOME}/.local/share/opencode/google-workspace-official/server",
         "timeout": {
           "startup": 120000,
           "catalog": 60000
