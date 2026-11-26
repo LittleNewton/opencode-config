@@ -36,24 +36,12 @@
       "google-workspace": {
         "type": "local",
         "command": [
-          "uvx",
-          "--from",
-          "workspace-mcp==2.7.0",
-          "workspace-mcp",
-          "--transport",
-          "stdio",
-          "--tool-tier",
-          "complete"
+          "node",
+          "{env:HOME}/.config/opencode/scripts/google-workspace.mjs"
         ],
         "cwd": "{env:HOME}",
-        "protocol": "auto",
-        "pool": true,
-        "environment": {
-          "GOOGLE_CLIENT_SECRET_PATH": "{env:HOME}/.config/google-workspace-mcp/client_secret.json",
-          "WORKSPACE_MCP_CREDENTIALS_DIR": "{env:HOME}/.local/share/opencode/google-workspace-mcp/credentials"
-        },
         "timeout": {
-          "startup": 60000,
+          "startup": 120000,
           "catalog": 60000
         }
       }
