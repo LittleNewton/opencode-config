@@ -32,6 +32,30 @@
         "url": "https://mcp.context7.com/mcp",
         "protocol": "auto",
         "pool": true
+      },
+      "google-workspace": {
+        "type": "local",
+        "command": [
+          "uvx",
+          "--from",
+          "workspace-mcp==2.7.0",
+          "workspace-mcp",
+          "--transport",
+          "stdio",
+          "--tool-tier",
+          "complete"
+        ],
+        "cwd": "{env:HOME}",
+        "protocol": "auto",
+        "pool": true,
+        "environment": {
+          "GOOGLE_CLIENT_SECRET_PATH": "{env:HOME}/.config/google-workspace-mcp/client_secret.json",
+          "WORKSPACE_MCP_CREDENTIALS_DIR": "{env:HOME}/.local/share/opencode/google-workspace-mcp/credentials"
+        },
+        "timeout": {
+          "startup": 60000,
+          "catalog": 60000
+        }
       }
     }
   },
